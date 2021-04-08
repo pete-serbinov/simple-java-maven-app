@@ -1,4 +1,12 @@
 # Maven
+- task: SynopsysDetectTask@6
+  inputs:
+    BlackDuckService: 'Test_BDH'
+    DetectVersion: 'latest'
+    DetectArguments: |
+      --detect.project.name="PSerbinov/tets_BDH"
+      --detect.project.version.name=1
+      --detect.source.path="$(System.DefaultWorkingDirectory)"
 # Build your Java project and run tests with Apache Maven.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java

@@ -6,8 +6,10 @@
 trigger:
 - master
 
+
 pool:
-  vmImage: ubuntu-latest
+  environment: Test Endava BlackDuck
+  # vmImage: ubuntu-latest
 
 steps:
 - task: Maven@3
